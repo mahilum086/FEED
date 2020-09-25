@@ -1,48 +1,45 @@
 ﻿using AForge.Video;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Imaging;
 using System.Windows.Forms;
-
 namespace FEEDV1
 {
     public partial class Form1 : Form
     {
         MJPEGStream stream;
-        int ctr;
+        public static PictureBox camera;
+
         public Form1()
         {
             InitializeComponent();
-            //ctr = 0;
-            //stream = new MJPEGStream("http://192.168.10.86:4747/video");
-            //stream.NewFrame += Stream_NewFrame;
+            stream = new MJPEGStream("http://192.168.0.101:4747/video");
+            stream.NewFrame += Stream_NewFrame;            
         }
 
         private void Stream_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             Bitmap bmp = (Bitmap)eventArgs.Frame.Clone();
-            pictureBox1.Image = bmp;
-
+            pictureBox1.Image = bmp;            
+            camera = pictureBox1;
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
-            //stream.Start();
+            stream.Start();
+            Timer.SetTimer();
         }
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
-            //stream.Stop();
+            Timer.Stop();
+            stream.Stop();            
         }
 
         private void btnCapture_Click(object sender, EventArgs e)
         {
-            //pictureBox2.Image = (Bitmap)pictureBox1.Image.Clone();
+            pictureBox2.Image = (Bitmap)pictureBox1.Image.Clone();
+            pictureBox2.Image.Save("C:/Users/mmb/Downloads/DIT/Project Management/FEED Files/images/img.jpg", ImageFormat.Jpeg);
         }
     }
 }

@@ -1,3 +1,0 @@
-1. Install visual studio code
-2. Open new terminal:
-git config --global credential.helper wincred
