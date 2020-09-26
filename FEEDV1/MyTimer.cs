@@ -32,6 +32,7 @@ namespace FEEDV1
                 {
                     if (detector.ProcessFrame(bmp) > 0.02)
                     {
+                        //Ma'am Jen: save image to db
                         bmp.Save("C:/Users/mmb/Downloads/DIT/Project Management/FEED Files/images/img_" + frame++ + ".jpg", ImageFormat.Bmp);
                         Console.WriteLine("Motion Detected.\nThe Elapsed event was raised at {0:HH:mm:ss.fff}", e.SignalTime);
                     }
