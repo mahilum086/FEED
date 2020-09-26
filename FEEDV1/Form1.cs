@@ -7,7 +7,7 @@ namespace FEEDV1
 {
     public partial class Form1 : Form
     {
-        MJPEGStream stream;
+        MJPEGStream stream;        
         public static PictureBox camera;
 
         public Form1()
@@ -20,26 +20,20 @@ namespace FEEDV1
         private void Stream_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             Bitmap bmp = (Bitmap)eventArgs.Frame.Clone();
-            pictureBox1.Image = bmp;            
-            camera = pictureBox1;
+            pictureBox1.Image = bmp;
+            camera = pictureBox1;          
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
             stream.Start();
-            Timer.SetTimer();
+            MyTimer.SetTimer();
         }
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
-            Timer.Stop();
+            MyTimer.Stop();
             stream.Stop();            
-        }
-
-        private void btnCapture_Click(object sender, EventArgs e)
-        {
-            pictureBox2.Image = (Bitmap)pictureBox1.Image.Clone();
-            pictureBox2.Image.Save("C:/Users/mmb/Downloads/DIT/Project Management/FEED Files/images/img.jpg", ImageFormat.Jpeg);
         }
     }
 }

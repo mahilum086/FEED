@@ -43,3 +43,9 @@ C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Video
 C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.xml
 C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Video.xml
 C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\obj\Debug\FEEDV1.csproj.CopyComplete
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Imaging.dll
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Math.dll
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Vision.dll
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Imaging.xml
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Math.xml
+C:\Users\mmb\Downloads\DIT\Project Management\FEED\FEEDV1\bin\Debug\AForge.Vision.xml
