@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FEEDV1"
+    "\\FEEDV1",
+    "\\FEEDV1\\bin",
+    "\\FEEDV1\\obj",
+    "\\FEEDV1\\packages",
+    "\\FEEDV1\\Properties"
   ],
-  "SelectedNode": "\\FEEDV1\\MyTimer.cs",
+  "SelectedNode": "\\FEEDV1\\Form1.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -3,6 +3,8 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 namespace FEEDV1
 {
     public partial class Form1 : Form
@@ -34,6 +36,11 @@ namespace FEEDV1
         {
             MyTimer.Stop();
             stream.Stop();            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
